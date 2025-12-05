@@ -16,9 +16,9 @@
 
 :root {
   color-scheme: light;
-  --bg: 255 255 255;
+  --bg: 231 235 240;
   --fg: 15 23 42;
-  --border-subtle: 226 232 240;
+  --border-subtle: 216 222 230;
 }
 
 :root[data-theme='dark'] {
