@@ -1,21 +1,29 @@
 'use client'
-import {ReactElement} from "react"
-import { useTheme, type ThemeMode } from "@/context/ThemeContext"
+import { ReactElement, useEffect, useState } from 'react'
+import { useTheme, type ThemeMode } from '@/context/ThemeContext'
 
 export function ThemeToggle(): ReactElement {
-    const { mode, setMode } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  const { mode, setMode } = useTheme()
 
-    const handleClick = (newMode: ThemeMode) => {
-        setMode(newMode)
-    }
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+  if (!mounted) {
+    return <div className="h-6 w-20" />
+  }
 
-    const base =
-    'px-2 py-0.5 rounded-full text-xs transition-colors hover:bg-[rgb(var(--border-subtle))]'
-  const active = 'bg-[rgb(var(--fg))] text-[rgb(var(--bg))]'
+  const handleClick = (newMode: ThemeMode) => {
+    setMode(newMode)
+  }
+
+  const base =
+    'px-2 py-0.5 rounded-full text-xs transition-colors hover:bg-slate-200 dark:hover:bg-slate-700'
+  const active = 'bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-50 font-semibold'
   const inactive = 'opacity-60'
 
   return (
-    <div className="inline-flex items-center gap-1 rounded-full border border-[rgb(var(--border-subtle))] p-0.5">
+    <div className="inline-flex items-center gap-1 rounded-full border border-slate-300 p-0.5 dark:border-slate-800">
       <button
         type="button"
         onClick={() => handleClick('light')}

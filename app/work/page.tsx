@@ -1,26 +1,25 @@
 // app/work/page.tsx
 import type { ReactElement } from 'react'
 import { projects } from '@/data/projects'
+import { styles } from '@/lib/styles'
 import { ProjectCard } from '@/components/projects/ProjectCard'
+import PageHeader from '@/components/layout/PageHeader'
 
 export default function WorkPage(): ReactElement {
-  const sorted = [...projects].sort((a, b) => a.priority - b.priority)
+  const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority)
 
   return (
-    <div className="space-y-6">
-      <header className="space-y-2">
-        <h1 className="text-2xl font-semibold tracking-tight">Work</h1>
-        <p className="text-sm text-[rgb(var(--fg))]/80">
-          Selected projects spanning full-stack engineering, performance, and SEO-focused web
-          platforms.
-        </p>
-      </header>
+    <section className={`${styles.container}`}>
+      <PageHeader
+        title="Work"
+        description="Selected projects spanning full-stack engineering, performance, and SEO-focused web platforms."
+      />
 
-      <div className="space-y-4">
-        {sorted.map((project) => (
+      <div className={`${styles.section} space-y-8 md:space-y-12`}>
+        {sortedProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

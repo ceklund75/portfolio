@@ -1,33 +1,57 @@
-@import "tailwindcss";
+/* app/globals.css */
+@import 'tailwindcss';
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================
+   THEME CONFIGURATION
+   ============================================ */
+@theme {
+  --font-tasa-orbiter: 'Tasa Orbiter', sans-serif;
+  --font-geist: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ============================================
+   DARK MODE VARIANT
+   Make dark: depend purely on .dark class
+   ============================================ */
+@custom-variant dark (&:where(.dark, .dark *));
 
-
-
+/* ============================================
+   COLOR SCHEMES & BACKGROUNDS
+   ============================================ */
 :root {
   color-scheme: light;
-  --bg: 231 235 240;
-  --fg: 15 23 42;
-  --border-subtle: 216 222 230;
 }
 
-:root[data-theme='dark'] {
+.dark {
   color-scheme: dark;
-  --bg: 15 23 42;
-  --fg: 241 245 249;
-  --border-subtle: 51 65 85;
 }
 
-body {
-  @apply min-h-screen bg-[rgb(var(--bg))] text-[rgb(var(--fg))];
+/* Gradient backgrounds for hero/feature sections */
+.gradient-bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.25), transparent 70%), #f8fafc;
+}
+
+.dark .gradient-bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.25), transparent 70%), #020618;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+@layer base {
+  html {
+    @apply scroll-smooth bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+    font-family: var(--font-geist, 'Geist', sans-serif);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
 }

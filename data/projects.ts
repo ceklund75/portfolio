@@ -58,47 +58,47 @@ export const projects: Project[] = [
     priority: 2,
     links: {
       live: 'https://your-portfolio-url.com',
-      repo: 'https://github.com/your-username/your-portfolio-repo',
+      repo: 'https://github.com/ceklund75/portfolio',
     },
   },
   {
-    id: 'ecommerce-performance-optimization',
-    slug: 'ecommerce-performance-optimization',
-    title: 'E-commerce Performance Optimization',
-    role: 'Lead performance engineer',
+    id: 'quantum-encryption-marketing-site',
+    slug: 'quantum-encryption-marketing-site',
+    title: 'Quantum Encryption Marketing Site Refactor & Lead Flow',
+    role: 'Consulting web engineer',
     summary:
-      'Led performance optimization for a high-traffic e-commerce platform, improving load times and user experience during peak shopping periods.',
+      'Inherited and refactored a newly launched corporate marketing site for a quantum-secure encryption solutions provider, restructuring templates and rebuilding lead capture flows around Marketo and Salesforce.',
     highlights: [
-      'Conducted comprehensive performance audits to identify bottlenecks',
-      'Implemented code-splitting and lazy loading to enhance page load speeds',
-      'Optimized server response times and database queries for faster data retrieval',
-      'Collaborated with the UX team to ensure performance improvements aligned with user experience goals',
+      'Took over an agency‑built WordPress + Laravel Blade + Tailwind CSS codebase and stabilized it for ongoing product marketing needs',
+      'Reworked core page templates and built new ones from partial Figma specs, improving maintainability and visual consistency',
+      'Implemented Marketo form integrations across the site, wiring submissions into Salesforce according to marketing operations requirements',
+      'Simplified and standardized lead capture forms so marketing could run campaigns with cleaner data and fewer friction points',
     ],
-    tech: ['React', 'Node.js', 'Webpack', 'Lighthouse', 'New Relic'],
+    tech: ['WordPress', 'Laravel Blade', 'Tailwind CSS', 'Marketo', 'Salesforce'],
     featured: false,
     priority: 3,
     links: {
-      live: 'https://example-ecommerce.com', // placeholder
+      live: 'https://qrypt.com', // replace if you can share the real URL
     },
   },
   {
-    id: 'ecommerce-performance-optimization-2',
-    slug: 'ecommerce-performance-optimization-4',
-    title: 'E-commerce Performance Optimization',
-    role: 'Lead performance engineer',
+    id: 'dues-calculator-plugin',
+    slug: 'dues-calculator-plugin',
+    title: 'Union Dues Calculator WordPress Plugin',
+    role: 'Solo plugin developer',
     summary:
-      'Led performance optimization for a high-traffic e-commerce platform, improving load times and user experience during peak shopping periods.',
+      'Custom WordPress plugin that calculates union dues based on configurable rules and renders an embeddable calculator via shortcode for use on campaign and informational sites.',
     highlights: [
-      'Conducted comprehensive performance audits to identify bottlenecks',
-      'Implemented code-splitting and lazy loading to enhance page load speeds',
-      'Optimized server response times and database queries for faster data retrieval',
-      'Collaborated with the UX team to ensure performance improvements aligned with user experience goals',
+      'Designed a reusable plugin instead of hard‑coding calculator logic into individual themes or pages',
+      'Implemented a shortcode‑based calculator UI so non‑technical editors can embed it anywhere in WordPress content',
+      'Encapsulated the dues calculation logic in PHP functions to keep business rules testable and easy to adjust',
+      'Handled user input and output formatting to present clear, predictable results for site visitors',
     ],
-    tech: ['React', 'Node.js', 'Webpack', 'Lighthouse', 'New Relic'],
+    tech: ['WordPress', 'PHP', 'JavaScript', 'Shortcodes'],
     featured: false,
     priority: 4,
     links: {
-      live: 'https://example-ecommerce.com', // placeholder
+      repo: 'https://github.com/ceklund75/dues-calculator-plugin',
     },
   },
 ]

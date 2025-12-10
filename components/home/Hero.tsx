@@ -1,33 +1,28 @@
-import { ReactElement } from "react"
+import Link from 'next/link'
+import { ReactElement } from 'react'
+import { styles } from '@/lib/styles'
 
 export function Hero(): ReactElement {
   return (
-    <section className="flex flex-col items-center justify-center gap-6 py-20 text-center sm:py-32">
-        <p className="text-xs uppercase tracking-[0.2em] text-[rgb(var(--fg))]/60">
-        Portfolio
-      </p>
-      <h1 className="max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
+    <header className={`${styles.hero}`}>
+      <p className={styles.eyebrow}>Portfolio</p>
+      <h1 className={`${styles.heading.h1} max-w-4xl`}>
         Senior full-stack engineer focused on fast, SEO-critical web platforms.
       </h1>
-      <p className="max-w-2xl text-sm text-[rgb(var(--fg))]/80">
-        I design and build performant web experiences for product teams, agencies, and
-        communications groups—combining modern React/Next.js stacks with deep SEO and
-        content strategy experience.
+      <p className={`${styles.text.lead} max-w-4xl`}>
+        Senior full-stack engineer and technology lead building content-heavy web platforms for
+        high-stakes communications, advocacy, litigation, and crisis work. I use React, Next.js,
+        Node.js, WordPress, and Python to ship fast, reliable sites and tools that play nicely with
+        search, analytics, and real-world reputation.
       </p>
       <div className="flex gap-3 text-sm">
-        <a
-          href="/work"
-          className="rounded-full bg-[rgb(var(--fg))] px-4 py-2 text-[rgb(var(--bg))]"
-        >
+        <Link href="/work" className={styles.button.primary}>
           View projects
-        </a>
-        <a
-          href="/contact"
-          className="rounded-full border border-[rgb(var(--border-subtle))] px-4 py-2 text-[rgb(var(--fg))]/80 hover:text-[rgb(var(--fg))]"
-        >
+        </Link>
+        <a href="/contact" className={styles.button.secondary}>
           Get in touch
         </a>
       </div>
-    </section>
+    </header>
   )
 }

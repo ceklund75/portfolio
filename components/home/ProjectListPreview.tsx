@@ -2,6 +2,7 @@ import { ReactElement } from 'react'
 import Link from 'next/link'
 import { ProjectCard } from '@/components/projects/ProjectCard'
 import { projects } from '@/data/projects'
+import { styles } from '@/lib/styles'
 
 export function ProjectListPreview(): ReactElement {
   const nonFeaturedProjects = projects
@@ -9,18 +10,13 @@ export function ProjectListPreview(): ReactElement {
     .sort((a, b) => a.priority - b.priority)
     .slice(0, 3)
 
-  console.log('nonFeaturedProjects', nonFeaturedProjects)
-
   if (nonFeaturedProjects.length === 0) return <section />
 
   return (
     <section className="space-y-4">
       <header className="flex items-baseline justify-between">
         <h2 className="text-sm font-semibold tracking-tight">Other Work</h2>
-        <Link
-          href="/work"
-          className="text-xs text-[rgb(var(--fg))]/70 underline underline-offset-4"
-        >
+        <Link href="/work" className={` ${styles.link.tiny} `}>
           See All Projects
         </Link>
       </header>
