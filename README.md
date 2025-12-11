@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Christopher Eklund – Portfolio
 
-## Getting Started
+Senior full‑stack engineer focused on fast, SEO‑critical web platforms. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
 
-First, run the development server:
+> Note: Content sections (case studies, detailed writeups, MDX pages) are currently work in progress and will be expanded over time.[web:134][web:148]
 
-```bash
+## Tech stack
+
+- **Framework:** Next.js 15 with App Router (`app/` directory)[web:72][web:109]
+- **Language:** TypeScript with strict typing for props and data models[web:159]
+- **Styling:** Tailwind CSS v4 with CSS‑first config using `@import`, `@theme`, and `@layer` in global styles[web:116]
+- **Animation:** Motion (`motion/react`) for hero, project cards, and mobile navigation animations[web:125]
+- **Fonts:** `Geist`, `Geist Mono`, and `TASA Orbiter` via `next/font` for consistent typography[web:72]
+- **Linting/Formatting:** ESLint (flat config) with `eslint-config-next` and `eslint-plugin-prettier`, plus Prettier and `prettier-plugin-tailwindcss` for class sorting[web:159]
+- **Icons:** `lucide-react` for lightweight, consistent iconography in navigation and theme controls[web:152]
+
+## Features
+
+- **Modern theming**
+  - Light, dark, and system modes managed by a custom `ThemeContext`
+  - No initial flash of incorrect theme using a small inline script and deferred hydration
+  - Compact segmented control theme switcher using sun, monitor, and moon icons
+
+- **Responsive layout & navigation**
+  - Sticky header with desktop navigation and a mobile hamburger menu
+  - Animated mobile menu using Motion variants for subtle slide and fade transitions[web:125]
+  - Layout containers tuned for readable line lengths on large and small screens
+
+- **Portfolio content model**
+  - Typed `Project` model backed by `projects.ts` for consistent data across the app
+  - Projects include headless marketing work, this portfolio, and prior custom builds
+  - Reusable `ProjectCard` used on the home page, work index, and project detail routes
+
+- **Design system**
+  - Centralized Tailwind class patterns in `lib/styles.ts` for layout, typography, and cards
+  - Palette built around neutral `slate` tones with a single primary accent for both themes
+  - High‑level content configuration in `content/` (for example `content/site.ts` and `content/pages/home.ts`) to keep copy and code separate
+
+## Running the project
+
+### Prerequisites
+
+- Node.js 18 or newer[web:72]
+- npm, pnpm, or yarn as a package manager[web:159]
+
+### Install dependencies
+
+npm install
+
+text
+
+If you encounter integrity or cache issues, clear the npm cache and retry:
+
+npm cache clean --force
+npm install
+
+text
+
+### Development
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+text
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Then open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- http://localhost:3000
 
-## Learn More
+### Production build
 
-To learn more about Next.js, take a look at the following resources:
+npm run build
+npm start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+text
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project structure
 
-## Deploy on Vercel
+app/
+layout.tsx # Root layout, fonts, ThemeProvider, header
+page.tsx # Home (hero, featured project, project previews)
+work/
+page.tsx # Work index
+[slug]/page.tsx # Project detail pages
+about/page.tsx
+contact/page.tsx
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+components/
+layout/SiteHeader.tsx # Desktop + mobile nav, theme toggle
+Hero.tsx # Animated hero section
+ProjectCard.tsx
+motion/ # Motion wrappers (MotionDiv, MotionSection, etc.)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+context/
+ThemeContext.tsx # Theme mode, resolved theme, and system preference
+
+content/
+site.ts # Global site content (nav, contact, metadata)
+pages/
+home.ts # Home hero and intro copy
+work.ts # Work page intro, labels, etc.
+
+data/
+projects.ts # Typed Project[] data
+
+text
+
+This structure keeps routing, layout, theming, and content clearly separated, which aligns with common recommendations for Next.js portfolio and documentation projects.[web:136][web:139][web:150]

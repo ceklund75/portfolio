@@ -31,7 +31,7 @@
 /* Gradient backgrounds for hero/feature sections */
 .gradient-bg {
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.25), transparent 70%), #f8fafc;
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.25), transparent 70%), #e2e8f0;
 }
 
 .dark .gradient-bg {
@@ -44,7 +44,7 @@
    ============================================ */
 @layer base {
   html {
-    @apply scroll-smooth bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+    @apply scroll-smooth bg-slate-200 text-slate-900 dark:bg-slate-950 dark:text-slate-200;
     font-family: var(--font-geist, 'Geist', sans-serif);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;

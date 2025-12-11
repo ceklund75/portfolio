@@ -20,19 +20,19 @@ export const styles = {
   // ============================================
   heading: {
     // Display headlines (hero, major page titles)
-    hero: 'font-[family-name:var(--font-tasa-orbiter)] text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-50',
+    hero: 'font-[family-name:var(--font-tasa-orbiter)] text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-200',
 
     // H1 - Page titles
-    h1: 'font-[family-name:var(--font-tasa-orbiter)] text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-50',
+    h1: 'font-[family-name:var(--font-tasa-orbiter)] text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-200',
 
     // H2 - Major section titles
-    h2: 'font-[family-name:var(--font-tasa-orbiter)] text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-50',
+    h2: 'font-[family-name:var(--font-tasa-orbiter)] text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200',
 
     // H3 - Subsection titles (can use Geist for variety)
-    h3: 'text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-50',
+    h3: 'text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-200',
 
     // H4 - Card titles, smaller headings
-    h4: 'text-xl md:text-2xl font-semibold text-slate-900 dark:text-slate-50',
+    h4: 'text-xl md:text-2xl font-semibold text-slate-900 dark:text-slate-200',
   },
 
   text: {
