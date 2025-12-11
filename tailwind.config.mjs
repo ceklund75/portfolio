@@ -24,4 +24,9 @@ export default {
     },
   },
   plugins: [],
+  variants: {
+    extend: {
+      animation: ['motion-safe'],
+    },
+  },
 }

@@ -62,7 +62,6 @@ export function ThemeProvider({ children }: ThemeProviderProps): ReactElement {
 
     const root = document.documentElement
     const attributeMode = root.getAttribute('data-theme-mode') as ThemeMode | null
-    console.log('Initializing mode:', attributeMode) // ADD THIS
     return attributeMode || 'system'
   })
 
@@ -71,12 +70,11 @@ export function ThemeProvider({ children }: ThemeProviderProps): ReactElement {
 
     const root = document.documentElement
     const attributeResolved = root.getAttribute('data-resolved-theme') as ResolvedTheme | null
-    console.log('Initializing resolvedMode:', attributeResolved) // ADD THIS
     return attributeResolved || 'light'
   })
 
   /**
-   * Effect B: Respond to OS theme changes when in "system" mode.
+   * Respond to OS theme changes when in "system" mode.
    * - Listens to prefers-color-scheme changes.
    * - Only updates resolvedMode if mode === 'system'.
    */
@@ -95,12 +93,10 @@ export function ThemeProvider({ children }: ThemeProviderProps): ReactElement {
   }, [mode])
 
   /**
-   * Effect C: Apply resolved theme to <html> via the "dark" class.
+   * Apply resolved theme to <html> via the "dark" class.
    * - Tailwind and global CSS use this to switch themes.
    */
   useEffect(() => {
-    // debug
-    console.log('Theme changed:', { mode, resolvedMode })
     if (typeof document === 'undefined') return
 
     const root = document.documentElement

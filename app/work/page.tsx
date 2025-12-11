@@ -16,8 +16,8 @@ export default function WorkPage(): ReactElement {
       />
 
       <div className={`${styles.section} space-y-8 md:space-y-12`}>
-        {sortedProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {sortedProjects.map((project, index) => (
+          <ProjectCard key={project.id} project={project} index={index} />
         ))}
       </div>
     </section>

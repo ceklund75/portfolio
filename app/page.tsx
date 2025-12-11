@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { ReactElement } from 'react'
 import { Hero } from '@/components/home/Hero'
 import { FeaturedProject } from '@/components/home/FeaturedProject'

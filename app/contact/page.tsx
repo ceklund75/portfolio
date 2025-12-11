@@ -1,6 +1,9 @@
+'use client'
 import type { ReactElement } from 'react'
 import { styles } from '@/lib/styles'
 import PageHeader from '@/components/layout/PageHeader'
+import { MotionSection } from '@/components/motion'
+import { fadeIn } from '@/lib/animations'
 
 export default function ContactPage(): ReactElement {
   return (
@@ -9,7 +12,10 @@ export default function ContactPage(): ReactElement {
         title="Contact"
         description="Open to senior individual contributor roles and select freelance projects."
       />
-      <section className={`${[styles.section, styles.text.body].join(' ')}`}>
+      <MotionSection
+        variants={fadeIn}
+        className={`${[styles.section, styles.text.body].join(' ')}`}
+      >
         <p>
           The easiest way to reach me is by email. If you'd like to talk about a role, a project, or
           how I can help with performance, SEO, or technical architecture for high-stakes web
@@ -34,7 +40,7 @@ export default function ContactPage(): ReactElement {
             linkedin.com/in/cmeklund
           </a>
         </div>
-      </section>
+      </MotionSection>
     </div>
   )
 }

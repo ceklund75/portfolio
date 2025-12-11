@@ -56,9 +56,7 @@ export default function RootLayout({
             }
             
             root.setAttribute('data-theme-mode', mode);
-            root.setAttribute('data-resolved-theme', resolvedTheme);
-
-            console.log('Applied theme mode:', mode, 'Resolved theme:', resolvedTheme);
+            root.setAttribute('data-resolved-theme', resolvedTheme);            
          })()`,
           }}
         />

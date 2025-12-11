@@ -1,18 +1,34 @@
+'use client'
+
 import { ReactElement } from 'react'
 import Link from 'next/link'
 import type { Project } from '@/data/projects'
 import { styles } from '@/lib/styles'
 
+import { MotionArticle } from '@/components/motion'
+import { scrollReveal } from '@/lib/animations'
+
 type ProjectCardProps = {
   project: Project
   compact?: boolean
+  index?: number //grid position
 }
 
-export function ProjectCard({ project, compact = false }: ProjectCardProps): ReactElement {
+export function ProjectCard({
+  project,
+  compact = false,
+  index = 0,
+}: ProjectCardProps): ReactElement {
   const { title, role, summary, tech, links, slug, featured } = project
   //rounded-lg border border-slate-300 bg-slate-50/80 p-4 dark:border-slate-800 dark:bg-slate-950/80
   return (
-    <article
+    <MotionArticle
+      initial="hidden"
+      whileInView="visible"
+      whileHover={{ y: -4 }} // Lift 4px on hover
+      viewport={{ once: true, margin: '-50px' }}
+      variants={scrollReveal}
+      transition={{ delay: index * 0.1 }}
       className={`flex flex-col gap-2 ${featured ? styles.card.featured : styles.card.base}`}
     >
       <div className="flex items-baseline justify-between gap-2">
@@ -53,6 +69,6 @@ export function ProjectCard({ project, compact = false }: ProjectCardProps): Rea
           )}
         </div>
       )}
-    </article>
+    </MotionArticle>
   )
 }

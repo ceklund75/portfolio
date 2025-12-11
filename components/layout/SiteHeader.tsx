@@ -4,6 +4,8 @@ import { usePathname } from 'next/navigation'
 import type { ReactElement } from 'react'
 import { ThemeToggle } from './ThemeToggle'
 import { styles } from '@/lib/styles'
+import { MotionDiv, MotionNav } from '@/components/motion'
+import { fadeIn, fadeInUp, slideInLeft } from '@/lib/animations'
 
 export type NavItem = {
   href: string
@@ -22,7 +24,12 @@ export function SiteHeader(): ReactElement {
 
   return (
     <header className="sticky top-0 z-20 border-b border-slate-200 bg-slate-50/40 backdrop-blur dark:border-slate-800 dark:bg-slate-950/40">
-      <div className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <MotionDiv
+        initial="hidden"
+        animate="visible"
+        variants={slideInLeft}
+        className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-3"
+      >
         <Link
           href="/"
           className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50"
@@ -47,7 +54,7 @@ export function SiteHeader(): ReactElement {
         </nav>
 
         <ThemeToggle />
-      </div>
+      </MotionDiv>
     </header>
   )
 }
