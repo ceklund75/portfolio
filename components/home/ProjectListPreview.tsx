@@ -20,7 +20,7 @@ export function ProjectListPreview(): ReactElement {
       <header className="flex items-baseline justify-between">
         <h2 className="text-sm font-semibold tracking-tight">Other Work</h2>
         <Link href="/work" className={` ${styles.link.tiny} `}>
-          See All Projects
+          View all projects
         </Link>
       </header>
 

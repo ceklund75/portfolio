@@ -18,7 +18,7 @@ export function FeaturedProject(): ReactElement {
       <header className="flex items-baseline justify-between">
         <h2 className="text-sm font-semibold tracking-tight">Featured Project</h2>
         <a href="/work" className={styles.link.tiny}>
-          View All
+          View all
         </a>
       </header>
 
