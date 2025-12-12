@@ -7,6 +7,7 @@ import { ThemeToggle } from './ThemeToggle'
 import { styles } from '@/lib/styles'
 import { MotionDiv, MotionNav } from '@/components/motion'
 import { fadeIn, fadeInUp } from '@/lib/animations'
+import { Logo } from '@/components/Logo/Logo'
 
 export type NavItem = {
   href: string
@@ -33,12 +34,14 @@ export function SiteHeader(): ReactElement {
         variants={fadeIn}
         className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-3"
       >
-        <Link
+        {/*<Link
           href="/"
           className="text-sm font-semibold tracking-tight text-slate-950 dark:text-slate-50"
+          aria-label='Christopher Eklund - Full-Stack Engineer - Home'
         >
           CE
-        </Link>
+        </Link> */}
+        <Logo />
 
         {/*desktop nav - hide on mobile*/}
         <nav className="hidden items-center gap-6 text-sm md:flex">
