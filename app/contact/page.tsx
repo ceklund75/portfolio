@@ -1,13 +1,25 @@
 'use client'
 import type { ReactElement } from 'react'
+import type { Metadata } from 'next'
 import { styles } from '@/lib/styles'
 import PageHeader from '@/components/layout/PageHeader'
 import { MotionSection, MotionDiv } from '@/components/motion'
 import { fadeIn } from '@/lib/animations'
+import { jsonLd } from '@/content/site'
+
+export const metadata: Metadata = {
+  title: 'Contact – Christopher Eklund',
+  description:
+    'Contact Christopher Eklund about full-stack engineering roles, freelance projects, or collaborations on SEO-critical web platforms.',
+}
 
 export default function ContactPage(): ReactElement {
   return (
     <div className={styles.container}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.contactJsonLd) }}
+      />
       <PageHeader
         title="Contact"
         description="Open to senior individual contributor roles and select freelance projects."

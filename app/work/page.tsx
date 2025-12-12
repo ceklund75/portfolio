@@ -1,15 +1,26 @@
 // app/work/page.tsx
 import type { ReactElement } from 'react'
+import type { Metadata } from 'next'
 import { projects } from '@/data/projects'
 import { styles } from '@/lib/styles'
 import { ProjectCard } from '@/components/projects/ProjectCard'
 import PageHeader from '@/components/layout/PageHeader'
+import { jsonLd } from '@/content/site'
 
+export const metadata: Metadata = {
+  title: 'Work – Christopher Eklund',
+  description:
+    'Selected projects from Christopher Eklund, including headless marketing sites, performance-focused refactors, and custom tools for high-stakes communications and SEO.',
+}
 export default function WorkPage(): ReactElement {
   const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority)
 
   return (
     <section className={`${styles.container}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.workJsonLd) }}
+      />
       <PageHeader
         title="Work"
         description="Selected projects spanning full-stack engineering, performance, and SEO-focused web platforms."

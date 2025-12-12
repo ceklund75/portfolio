@@ -1,14 +1,26 @@
 'use client'
 import type { ReactElement } from 'react'
 import Image from 'next/image'
+import type { Metadata } from 'next'
 import { styles } from '@/lib/styles'
 import PageHeader from '@/components/layout/PageHeader'
 import { MotionSection, MotionDiv } from '@/components/motion'
 import { fadeIn, staggerContainer } from '@/lib/animations'
+import { jsonLd } from '@/content/site'
+
+export const metadata: Metadata = {
+  title: 'About – Christopher Eklund',
+  description:
+    'Background, experience, and focus areas for Christopher Eklund, a senior full-stack engineer working on SEO-critical web platforms.',
+}
 
 export default function AboutPage(): ReactElement {
   return (
     <div className={`${styles.container}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.personJsonLd) }}
+      />
       <PageHeader
         title="Christopher Eklund"
         description="Senior full-stack engineer building content-heavy platforms for crisis communications and reputation management."
