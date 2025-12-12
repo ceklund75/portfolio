@@ -9,7 +9,7 @@ export default function AboutPage(): ReactElement {
   return (
     <div className={`${styles.container}`}>
       <PageHeader
-        title="About Chris Eklund"
+        title="About Christopher Eklund"
         description="Senior full-stack engineer building content-heavy platforms for crisis communications and reputation management."
       />
 

@@ -14,9 +14,10 @@ export const siteContent = {
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ],
-
+  copyright: `© ${new Date().getFullYear()}`,
   //contact info
   contact: {
+    name: 'Christopher Eklund',
     email: 'chris@cmeklund.com',
     linkedin: 'https://linkedin.com/in/cmeklund',
     github: 'https://github.com/ceklund75',

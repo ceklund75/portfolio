@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from 'next'
+
 import { Geist, Geist_Mono, TASA_Orbiter } from 'next/font/google'
 import './globals.css'
 
 import { ThemeProvider } from '@/context/ThemeContext'
 import { SiteHeader } from '@/components/layout/SiteHeader'
+import { SiteFooter } from '@/components/layout/SiteFooter'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -16,7 +18,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Christopher Eklund - Portfolio',
+  title: 'Christopher Eklund – Full‑Stack Engineer',
   description: 'Senior full-stack engineer focused on fast, SEO-critical web platforms.',
 }
 
@@ -60,11 +62,12 @@ export default function RootLayout({
          })()`,
           }}
         />
-        <div className="relative min-h-screen w-full">
+        <div className="relative flex min-h-screen w-full flex-col">
           <div className="gradient-bg absolute inset-0 z-0" />
           <ThemeProvider>
             <SiteHeader />
-            <main className="relative z-10">{children}</main>
+            <main className="relative z-10 flex-1">{children}</main>
+            <SiteFooter />
           </ThemeProvider>
         </div>
       </body>

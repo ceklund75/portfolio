@@ -10,7 +10,7 @@ export default function ContactPage(): ReactElement {
     <div className={styles.container}>
       <PageHeader
         title="Contact"
-        //description="Open to senior individual contributor roles and select freelance projects."
+        description="Open to senior individual contributor roles and select freelance projects."
       />
       <MotionSection
         variants={fadeIn}

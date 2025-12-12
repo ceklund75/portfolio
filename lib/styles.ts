@@ -10,10 +10,10 @@ export const styles = {
   // LAYOUT
   // ============================================
   container:
-    'container flex flex-col mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-8 lg:space-y-12 py-8 lg:py-12 items-center',
+    'container w-full flex flex-col mx-auto md:max-w-5xl px-4 sm:px-6 lg:px-8 space-y-8 lg:space-y-12 py-8 lg:py-12 items-center',
   section: 'w-full flex flex-col space-y-4 lg:space-y-8',
-  hero: 'container flex flex-col items-center space-y-8 lg:space-y-12',
-  header: 'flex flex-col max-w-3xl items-center px-4 space-y-4 lg:space-y-8',
+  hero: 'container w-full flex flex-col items-left md:items-center space-y-8 lg:space-y-12',
+  header: 'flex flex-col md:max-w-3xl items-left md:items-center space-y-4 lg:space-y-8',
 
   // ============================================
   // TYPOGRAPHY
@@ -68,7 +68,7 @@ export const styles = {
     navActive: 'text-slate-900 dark:text-slate-50 font-medium',
 
     // tiny link:
-    tiny: 'text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4 transition-colors',
+    tiny: 'tiny-link text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4 transition-colors',
   },
 
   button: {

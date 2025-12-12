@@ -61,7 +61,7 @@ export default function ProjectDetailCard({ project }: ProjectDetailCardProps): 
             {project.links.repo && (
               <a
                 href={project.links.repo}
-                className={styles.link.default}
+                className={styles.link.tiny}
                 target="_blank"
                 rel="noreferrer"
               >

@@ -31,6 +31,9 @@ export default function PageHeader({ title, description, eyebrow }: PageHeaderPr
       <MotionDiv variants={fadeInUp}>
         <p className={styles.text.lead}>{description}</p>
       </MotionDiv>
+      <MotionDiv variants={fadeInUp}>
+        <div className="h-0.5 w-8 bg-blue-500/50 dark:bg-blue-400/50"></div>
+      </MotionDiv>
     </MotionDiv>
   )
 }
