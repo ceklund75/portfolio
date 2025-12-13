@@ -19,7 +19,6 @@ type WorkDetailPageProps = {
 
 export async function generateMetadata(props: WorkDetailPageProps): Promise<Metadata> {
   const { slug } = await props.params
-
   const project = projects.find((p) => p.slug === slug)
 
   if (!project) {
@@ -36,7 +35,6 @@ export async function generateMetadata(props: WorkDetailPageProps): Promise<Meta
 
 export default async function WorkDetailPage(props: WorkDetailPageProps): Promise<ReactElement> {
   const { slug } = await props.params
-
   const project = projects.find((p) => p.slug === slug)
 
   if (!project) {
