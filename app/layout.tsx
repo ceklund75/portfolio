@@ -19,19 +19,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Christopher Eklund – Full-Stack Engineer',
-  description: 'Senior full-stack engineer focused on fast, SEO-critical web platforms.',
+  description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
   openGraph: {
     type: 'website',
     url: 'https://cmeklund.com',
     title: 'Christopher Eklund – Full-Stack Engineer',
-    description: 'Senior full-stack engineer focused on fast, SEO-critical web platforms.',
+    description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
     siteName: 'Christopher Eklund Portfolio',
     images: ['https://cmeklund.com/christopher-eklund-fse-og.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Christopher Eklund – Full-Stack Engineer',
-    description: 'Senior full-stack engineer focused on fast, SEO-critical web platforms.',
+    description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
     images: ['https://cmeklund.com/christopher-eklund-fse-og.webp'],
   },
 }

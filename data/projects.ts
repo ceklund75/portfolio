@@ -46,12 +46,13 @@ export const projects: Project[] = [
     title: 'Personal Portfolio with Next.js & TypeScript',
     role: 'Solo full-stack developer',
     summary:
-      'In-progress personal portfolio built with Next.js 15, TypeScript, Tailwind CSS v4, and a custom theming system to showcase full-stack and SEO-focused work.',
+      'Personal portfolio built with Next.js 15, TypeScript, Tailwind CSS v4, and a custom theming system to showcase full-stack and SEO-focused work.',
     highlights: [
       'Implemented a typed project data model and shared UI components using Next.js App Router',
       'Built a custom light/dark/system theme switcher with React context and Tailwind CSS v4',
       'Structured the codebase with reusable layout, home, and project components for future expansion',
       'Configured ESLint and Prettier with Tailwind class sorting to enforce consistent code quality',
+      'Enforced strict TypeScript across all components with zero any types and fully typed props/API responses.',
     ],
     tech: ['Next.js 15', 'TypeScript', 'React', 'Tailwind CSS v4', 'Motion'],
     featured: false,

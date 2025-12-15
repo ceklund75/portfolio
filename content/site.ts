@@ -6,7 +6,7 @@ export const siteContent = {
   name: 'Christopher Eklund',
   shortName: 'Chris Eklund',
   title: 'Christopher Eklund | Full-Stack Engineer',
-  description: 'Senior full-stack engineer focused on fast, SEO-critical web platforms.',
+  description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
 
   //nav items
   nav: [
@@ -32,7 +32,7 @@ export const jsonLd = {
     '@id': `${SITE_URL}/#webpage`,
     url: SITE_URL,
     name: 'Christopher Eklund – Full-Stack Engineer',
-    description: 'Senior full-stack engineer focused on fast, SEO-critical web platforms.',
+    description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
@@ -58,7 +58,7 @@ export const jsonLd = {
     url: `${SITE_URL}/about`,
     jobTitle: 'Senior Full-Stack Engineer',
     description:
-      'Senior full-stack engineer and technology lead building content-heavy, SEO-critical web platforms.',
+      'Full-stack engineer and technology lead building content-heavy, SEO-critical web platforms.',
     worksFor: {
       '@type': 'Organization',
       name: 'Independent / Freelance',

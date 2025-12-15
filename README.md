@@ -1,6 +1,6 @@
 # Christopher Eklund – Portfolio
 
-Senior full-stack engineer focused on fast, SEO-critical web platforms. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
+Full-stack engineer focused on fast, SEO-critical web platforms. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
 
 > Note: Content sections (case studies, detailed writeups, MDX pages) are currently work in progress and will be expanded over time.[web:134][web:148]
 

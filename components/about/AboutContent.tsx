@@ -17,7 +17,7 @@ export function AboutContent(): ReactElement {
       />
       <PageHeader
         title="Christopher Eklund"
-        description="Senior full-stack engineer building content-heavy platforms for crisis communications and reputation management."
+        description="Full-stack engineer building content-heavy platforms for crisis communications and reputation management."
       />
       <div className="flex flex-col gap-8 md:flex-row md:items-start">
         <MotionDiv variants={fadeIn} className="md:hidden">
@@ -55,12 +55,11 @@ export function AboutContent(): ReactElement {
         >
           <MotionDiv variants={fadeIn}>
             <p>
-              I'm Chris Eklund, a senior full-stack engineer and technology lead who builds
-              content-heavy web platforms for work that can't afford to break—corporate
-              communications, advocacy campaigns, litigation matters, and crisis response. Over the
-              last 15+ years, I've designed and maintained sites and tools that need to be fast,
-              stable, and reliable even when timelines are tight and the subject matter is
-              sensitive.
+              I'm Chris Eklund, a full-stack engineer and technology lead who builds content-heavy
+              web platforms for work that can't afford to break—corporate communications, advocacy
+              campaigns, litigation matters, and crisis response. Over the last 15+ years, I've
+              designed and maintained sites and tools that need to be fast, stable, and reliable
+              even when timelines are tight and the subject matter is sensitive.
             </p>
           </MotionDiv>
           <MotionDiv variants={fadeIn}>
