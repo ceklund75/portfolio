@@ -43,7 +43,7 @@ export function AboutContent(): ReactElement {
               width={300}
               height={650}
               sizes="(max-width: 767px) 100vw, 300px"
-              className="h-auto w-full max-w-[260px] rounded-lg object-cover"
+              className="h-auto w-full max-w-65 rounded-lg object-cover"
             />
           </MotionDiv>
         </MotionSection>

@@ -2,11 +2,11 @@ export const homeContent = {
   hero: {
     eyebrow: 'Christopher EKlund - Full-stack engineer',
     headline: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
-    description: `Full-stack engineer and technology lead building content-heavy web platforms for high-stakes communications, advocacy, litigation, and crisis work. I use React, Next.js, Node.js, WordPress, and Python to ship fast, reliable sites and tools that play nicely with search, analytics, and real-world reputation.`,
+    description: `Full-stack engineer specializing in Next.js, TypeScript, and headless WordPress architectures. I build performance-optimized web platforms with a focus on SEO, content flexibility, and fast deployment. Recent work includes headless CMS integrations, marketing site refactors, and custom WordPress solutions for companies that need reliable, search-friendly platforms.`,
 
     cta: {
       primary: {
-        label: 'View projects',
+        label: 'View my work',
         href: '/work',
       },
       secondary: {

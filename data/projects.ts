@@ -29,7 +29,7 @@ export const projects: Project[] = [
     highlights: [
       'Owned the project end to end: architecture, implementation, deployment, and monitoring',
       'Designed a headless WordPress + Faust data model and routing strategy for flexible content',
-      'Optimized image loading, caching, and Core Web Vitals to keep pages feeling fast',
+      'Optimized Core Web Vitals: 98 Lighthouse Performance score, <3s LCP, 0 CLS',
       'Implemented SEO-aware URL structures, metadata, and content organization',
     ],
     tech: ['Next.js', 'Faust.js', 'WordPress', 'Node.js', 'WP Engine Atlas'],
@@ -46,15 +46,16 @@ export const projects: Project[] = [
     title: 'Personal Portfolio with Next.js & TypeScript',
     role: 'Solo full-stack developer',
     summary:
-      'Personal portfolio built with Next.js 15, TypeScript, Tailwind CSS v4, and a custom theming system to showcase full-stack and SEO-focused work.',
+      'Personal portfolio built with Next.js 16, TypeScript, Tailwind CSS v4, and a custom theming system to showcase full-stack and SEO-focused work.',
     highlights: [
       'Implemented a typed project data model and shared UI components using Next.js App Router',
       'Built a custom light/dark/system theme switcher with React context and Tailwind CSS v4',
       'Structured the codebase with reusable layout, home, and project components for future expansion',
       'Configured ESLint and Prettier with Tailwind class sorting to enforce consistent code quality',
+      'Optimized Core Web Vitals: 99 Lighthouse Performance score, <2.5s LCP, 0 CLS',
       'Enforced strict TypeScript across all components with zero any types and fully typed props/API responses.',
     ],
-    tech: ['Next.js 15', 'TypeScript', 'React', 'Tailwind CSS v4', 'Motion'],
+    tech: ['Next.js 16', 'TypeScript', 'React', 'Tailwind CSS v4', 'Motion'],
     featured: false,
     priority: 2,
     links: {
