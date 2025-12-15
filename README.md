@@ -1,6 +1,6 @@
 # Christopher Eklund – Portfolio
 
-Senior full‑stack engineer focused on fast, SEO‑critical web platforms. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
+Senior full-stack engineer focused on fast, SEO-critical web platforms. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
 
 > Note: Content sections (case studies, detailed writeups, MDX pages) are currently work in progress and will be expanded over time.[web:134][web:148]
 
@@ -8,7 +8,7 @@ Senior full‑stack engineer focused on fast, SEO‑critical web platforms. This
 
 - **Framework:** Next.js 15 with App Router (`app/` directory)[web:72][web:109]
 - **Language:** TypeScript with strict typing for props and data models[web:159]
-- **Styling:** Tailwind CSS v4 with CSS‑first config using `@import`, `@theme`, and `@layer` in global styles[web:116]
+- **Styling:** Tailwind CSS v4 with CSS-first config using `@import`, `@theme`, and `@layer` in global styles[web:116]
 - **Animation:** Motion (`motion/react`) for hero, project cards, and mobile navigation animations[web:125]
 - **Fonts:** `Geist`, `Geist Mono`, and `TASA Orbiter` via `next/font` for consistent typography[web:72]
 - **Linting/Formatting:** ESLint (flat config) with `eslint-config-next` and `eslint-plugin-prettier`, plus Prettier and `prettier-plugin-tailwindcss` for class sorting[web:159]
@@ -34,7 +34,7 @@ Senior full‑stack engineer focused on fast, SEO‑critical web platforms. This
 - **Design system**
   - Centralized Tailwind class patterns in `lib/styles.ts` for layout, typography, and cards
   - Palette built around neutral `slate` tones with a single primary accent for both themes
-  - High‑level content configuration in `content/` (for example `content/site.ts` and `content/pages/home.ts`) to keep copy and code separate
+  - High-level content configuration in `content/` (for example `content/site.ts` and `content/pages/home.ts`) to keep copy and code separate
 
 ## Running the project
 
