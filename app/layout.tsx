@@ -6,6 +6,7 @@ import './globals.css'
 import { ThemeProvider } from '@/context/ThemeContext'
 import { SiteHeader } from '@/components/layout/SiteHeader'
 import { SiteFooter } from '@/components/layout/SiteFooter'
+import { baseMetadata } from '@/lib/metadata'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -17,24 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-export const metadata: Metadata = {
-  title: 'Christopher Eklund – Full-Stack Engineer',
-  description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
-  openGraph: {
-    type: 'website',
-    url: 'https://cmeklund.com',
-    title: 'Christopher Eklund – Full-Stack Engineer',
-    description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
-    siteName: 'Christopher Eklund Portfolio',
-    images: ['https://cmeklund.com/christopher-eklund-fse-og.webp'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Christopher Eklund – Full-Stack Engineer',
-    description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
-    images: ['https://cmeklund.com/christopher-eklund-fse-og.webp'],
-  },
-}
+export const metadata: Metadata = baseMetadata
 
 export const viewport: Viewport = {
   colorScheme: 'light dark',
@@ -51,29 +35,29 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-          (function() {
-            const storageKey = 'portfolio-theme-mode';
-            const storedMode = localStorage.getItem(storageKey);
-            const mode = storedMode || 'system';
-            const systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            
-            let resolvedTheme;
-            if(mode === 'system') {
-              resolvedTheme = systemIsDark ? 'dark' : 'light';
-            } else {
-              resolvedTheme = mode;
-            }
-            
-            const root = document.documentElement;
-            if(resolvedTheme === 'dark') {
-              root.classList.add('dark');
-            } else {
-              root.classList.remove('dark');
-            }
-            
-            root.setAttribute('data-theme-mode', mode);
-            root.setAttribute('data-resolved-theme', resolvedTheme);            
-         })()`,
+      (function() {
+        const storageKey = 'portfolio-theme-mode';
+        const storedMode = localStorage.getItem(storageKey);
+        const mode = storedMode || 'system';
+        const systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let resolvedTheme;
+        if(mode === 'system') {
+          resolvedTheme = systemIsDark ? 'dark' : 'light';
+        } else {
+          resolvedTheme = mode;
+        }
+        
+        const root = document.documentElement;
+        if(resolvedTheme === 'dark') {
+          root.classList.add('dark');
+        } else {
+          root.classList.remove('dark');
+        }
+        
+        root.setAttribute('data-theme-mode', mode);
+        root.setAttribute('data-resolved-theme', resolvedTheme);            
+      })()`,
           }}
         />
         <div className="relative flex min-h-screen w-full flex-col">

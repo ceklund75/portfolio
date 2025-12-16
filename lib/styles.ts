@@ -59,7 +59,7 @@ export const styles = {
   link: {
     // Standard inline links
     default:
-      'text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-colors',
+      'text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-colors',
 
     // Navigation links (no underline)
     nav: 'text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-50 transition-colors',
@@ -68,13 +68,13 @@ export const styles = {
     navActive: 'text-slate-900 dark:text-slate-50 font-medium',
 
     // tiny link:
-    tiny: 'tiny-link text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4 transition-colors',
+    tiny: 'tiny-link text-xs text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4 transition-colors',
   },
 
   button: {
     // Primary CTA buttons
     primary:
-      'inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-medium transition-colors shadow-sm hover:shadow-md',
+      'inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-700 hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-medium transition-colors shadow-sm hover:shadow-md',
 
     // Secondary buttons
     secondary:

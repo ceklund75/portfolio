@@ -8,6 +8,7 @@ import PageHeader from '@/components/layout/PageHeader'
 import ProjectDetailCard from '@/components/projects/ProjectDetailCard'
 import { MotionDiv } from '@/components/motion'
 import { fadeIn } from '@/lib/animations'
+import { createDynamicMetadata, getProjectPathname } from '@/lib/metadata'
 
 type WorkDetailPageParams = {
   slug: string
@@ -24,13 +25,19 @@ export async function generateMetadata(props: WorkDetailPageProps): Promise<Meta
   if (!project) {
     return {
       title: 'Project not found',
+      description: 'The project you are looking for does not exist.',
+      robots: {
+        index: false,
+        follow: false,
+      },
     }
   }
 
-  return {
-    title: `${project.title} – Work | Christopher Eklund`,
-    description: project.summary,
-  }
+  return createDynamicMetadata(
+    `${project.title} - Christopher Eklund`,
+    project.summary,
+    getProjectPathname(slug),
+  )
 }
 
 export default async function WorkDetailPage(props: WorkDetailPageProps): Promise<ReactElement> {

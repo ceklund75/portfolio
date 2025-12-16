@@ -6,12 +6,13 @@ import { styles } from '@/lib/styles'
 import { ProjectCard } from '@/components/projects/ProjectCard'
 import PageHeader from '@/components/layout/PageHeader'
 import { jsonLd } from '@/content/site'
+import { createPageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'Work – Christopher Eklund',
-  description:
-    'Selected projects from Christopher Eklund, including headless marketing sites, performance-focused refactors, and custom tools for high-stakes communications and SEO.',
-}
+export const metadata: Metadata = createPageMetadata(
+  'Work – Christopher Eklund',
+  'Selected projects from Christopher Eklund, including headless marketing sites, performance-focused refactors, and custom tools for high-stakes communications and SEO.',
+  '/work',
+)
 export default function WorkPage(): ReactElement {
   const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority)
 

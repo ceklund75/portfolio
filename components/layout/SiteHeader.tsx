@@ -34,13 +34,6 @@ export function SiteHeader(): ReactElement {
         variants={fadeIn}
         className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-3"
       >
-        {/*<Link
-          href="/"
-          className="text-sm font-semibold tracking-tight text-slate-950 dark:text-slate-50"
-          aria-label='Christopher Eklund - Full-Stack Engineer - Home'
-        >
-          CE
-        </Link> */}
         <Logo />
 
         {/*desktop nav - hide on mobile*/}

@@ -15,7 +15,7 @@ export function ContactContent(): ReactElement {
       />
       <PageHeader
         title="Contact"
-        description="Open to senior individual contributor roles and select freelance projects."
+        description="Open to individual contributor roles and select freelance projects."
       />
       <MotionSection
         variants={fadeIn}
@@ -29,14 +29,13 @@ export function ContactContent(): ReactElement {
           </p>
         </MotionDiv>
         <MotionDiv variants={fadeIn} className={`${[styles.section, styles.card.ghost].join(' ')}`}>
-          <ul className="grid sm:grid-cols-2">
+          <ul className="grid space-y-4 sm:grid-cols-3">
             <li className="space-y-1">
               <p className="font-medium">Email</p>
               <a href="mailto:chris@cmeklund.com" className="underline underline-offset-4">
                 chris@cmeklund.com
               </a>
             </li>
-
             <li className="space-y-1">
               <p className="font-medium">LinkedIn</p>
               <a
@@ -46,6 +45,17 @@ export function ContactContent(): ReactElement {
                 rel="noreferrer"
               >
                 linkedin.com/in/cmeklund
+              </a>
+            </li>
+            <li className="space-y-1">
+              <p className="font-medium">Github</p>
+              <a
+                href="https://github.com/ceklund75"
+                className="underline underline-offset-4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github.com/ceklund75
               </a>
             </li>
           </ul>
