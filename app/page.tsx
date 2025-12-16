@@ -4,6 +4,13 @@ import { FeaturedProject } from '@/components/home/FeaturedProject'
 import { ProjectListPreview } from '@/components/home/ProjectListPreview'
 import { styles } from '@/lib/styles'
 import { jsonLd } from '@/content/site'
+import { createPageMetadata } from '@/lib/metadata'
+
+export const metadata = createPageMetadata(
+  'Christopher Eklund - Full-Stack Engineer',
+  'Full-stack engineer focused on fast, SEO-critical web platforms.',
+  '/',
+)
 
 export default function HomePage(): ReactElement {
   return (

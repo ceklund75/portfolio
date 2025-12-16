@@ -1,5 +1,5 @@
 const nextConfig = {
-  reactCompiler: true,
+  reactCompiler: false,
   turbopack: {
     rules: {
       '*.svg': {
