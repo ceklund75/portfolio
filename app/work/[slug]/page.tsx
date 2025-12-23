@@ -33,11 +33,7 @@ export async function generateMetadata(props: WorkDetailPageProps): Promise<Meta
     }
   }
 
-  return createDynamicMetadata(
-    `${project.title} - Christopher Eklund`,
-    project.summary,
-    getProjectPathname(slug),
-  )
+  return createDynamicMetadata(`${project.title}`, project.summary, getProjectPathname(slug))
 }
 
 export default async function WorkDetailPage(props: WorkDetailPageProps): Promise<ReactElement> {

@@ -9,7 +9,7 @@ import { jsonLd } from '@/content/site'
 import { createPageMetadata } from '@/lib/metadata'
 
 export const metadata: Metadata = createPageMetadata(
-  'Work – Christopher Eklund',
+  'Work',
   'Selected projects from Christopher Eklund, including headless marketing sites, performance-focused refactors, and custom tools for high-stakes communications and SEO.',
   '/work',
 )
