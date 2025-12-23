@@ -1,4 +1,4 @@
-// data/projects.ts
+import siteConfig from '@/app/site.config'
 
 export type ProjectLink = {
   live?: string
@@ -16,6 +16,13 @@ export type Project = {
   featured: boolean
   priority: number
   links?: ProjectLink
+  updatedAt?: string
+  hideFromSitemap?: boolean
+}
+
+export type WorkRouteInfo = {
+  path: string
+  lastModified?: string
 }
 
 export const projects: Project[] = [
@@ -38,6 +45,8 @@ export const projects: Project[] = [
     links: {
       live: 'https://digitalstrategyltd.com', // placeholder for now
     },
+    updatedAt: '2025-12-11T00:00:00.000Z',
+    hideFromSitemap: false,
   },
 
   {
@@ -62,6 +71,8 @@ export const projects: Project[] = [
       live: 'https://cmeklund.com',
       repo: 'https://github.com/ceklund75/portfolio',
     },
+    updatedAt: '2025-12-23T00:00:00.000Z',
+    hideFromSitemap: false,
   },
   {
     id: 'quantum-encryption-marketing-site',
@@ -82,6 +93,8 @@ export const projects: Project[] = [
     links: {
       live: 'https://qrypt.com',
     },
+    updatedAt: '2025-12-11T00:00:00.000Z',
+    hideFromSitemap: true,
   },
   {
     id: 'dues-calculator-plugin',
@@ -102,5 +115,17 @@ export const projects: Project[] = [
     links: {
       repo: 'https://github.com/ceklund75/dues-calculator-plugin',
     },
+    updatedAt: '2025-12-11T00:00:00.000Z',
+    hideFromSitemap: true,
   },
 ]
+
+export function getWorkProjectPaths(): WorkRouteInfo[] {
+  const visibleProjects = projects.filter((project) => !project.hideFromSitemap)
+  return visibleProjects.map((project) => {
+    return {
+      path: `/work/${project.slug}`,
+      lastModified: project.updatedAt || siteConfig.PORTFOLIO_LAST_UPDATED,
+    }
+  })
+}
