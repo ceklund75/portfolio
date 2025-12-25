@@ -8,7 +8,7 @@ import PageHeader from '@/components/layout/PageHeader'
 import ProjectDetailCard from '@/components/projects/ProjectDetailCard'
 import { MotionDiv } from '@/components/motion'
 import { fadeIn } from '@/lib/animations'
-import { createDynamicMetadata, getProjectPathname } from '@/lib/metadata'
+import { createPageMetadata, getProjectPathname } from '@/lib/metadata'
 
 type WorkDetailPageParams = {
   slug: string
@@ -33,7 +33,7 @@ export async function generateMetadata(props: WorkDetailPageProps): Promise<Meta
     }
   }
 
-  return createDynamicMetadata(`${project.title}`, project.summary, getProjectPathname(slug))
+  return createPageMetadata(`${project.title}`, project.summary, getProjectPathname(slug))
 }
 
 export default async function WorkDetailPage(props: WorkDetailPageProps): Promise<ReactElement> {

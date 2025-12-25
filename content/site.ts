@@ -7,6 +7,8 @@ export const siteContent = {
   shortName: 'Chris Eklund',
   title: 'Christopher Eklund | Full-Stack Engineer',
   description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
+  url: 'https://cmeklund.com',
+  ogImage: 'https://cmeklund.com/christopher-eklund-fse-og.webp',
 
   //nav items
   nav: [

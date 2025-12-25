@@ -1,46 +1,46 @@
 import { Metadata } from 'next'
+import { siteContent } from '@/content/site'
 
-export const SITE_CONFIG = {
-  name: 'Christopher Eklund',
-  title: 'Christopher Eklund – Full-Stack Engineer',
-  description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
-  url: 'https://cmeklund.com',
-  ogImage: 'https://cmeklund.com/christopher-eklund-fse-og.webp',
+type PageMetadataInput = {
+  title: string
+  description: string
+  pathname: string
+  image?: string
 }
 
 function getCanonicalUrl(path: string = ''): string {
   const cleanPath = path.startsWith('/') ? path : `/${path}`
-  return `${SITE_CONFIG.url}${cleanPath}`
+  return `${siteContent.url}${cleanPath}`
 }
 
 export const baseMetadata: Metadata = {
-  metadataBase: new URL(SITE_CONFIG.url),
+  metadataBase: new URL(siteContent.url),
   title: {
-    template: '%s – Christopher Eklund',
-    default: SITE_CONFIG.title,
+    template: `%s – ${siteContent.name}`,
+    default: siteContent.title,
   },
-  description: SITE_CONFIG.description,
+  description: siteContent.description,
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: SITE_CONFIG.url,
-    siteName: SITE_CONFIG.name,
-    title: SITE_CONFIG.title,
-    description: SITE_CONFIG.description,
+    url: siteContent.url,
+    siteName: siteContent.name,
+    title: siteContent.title,
+    description: siteContent.description,
     images: [
       {
-        url: SITE_CONFIG.ogImage,
+        url: siteContent.ogImage,
         width: 1200,
         height: 630,
-        alt: SITE_CONFIG.title,
+        alt: siteContent.title,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: SITE_CONFIG.title,
-    description: SITE_CONFIG.description,
-    images: [SITE_CONFIG.ogImage],
+    title: siteContent.title,
+    description: siteContent.description,
+    images: [siteContent.ogImage],
   },
   robots: {
     index: true,
@@ -54,7 +54,7 @@ export function createPageMetadata(
   pathname: string,
   image?: string,
 ): Metadata {
-  const ogImage = image || SITE_CONFIG.ogImage
+  const ogImage = image || siteContent.ogImage
   const canonicalUrl = getCanonicalUrl(pathname)
 
   return {
@@ -85,12 +85,12 @@ export function createPageMetadata(
   }
 }
 
-export function createDynamicMetadata(
-  title: string,
-  description: string,
-  pathname: string,
-  image?: string,
-): Metadata {
+export function createTypedMetadata({
+  title,
+  description,
+  pathname,
+  image,
+}: PageMetadataInput): Metadata {
   return createPageMetadata(title, description, pathname, image)
 }
 
