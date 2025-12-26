@@ -7,7 +7,7 @@ export const siteContent = {
   shortName: 'Chris Eklund',
   title: 'Christopher Eklund - Full-Stack Web Developer & Consultant',
   description:
-    'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. I build and upgrade performance- and SEO-critical sites for agencies, PR/reputation firms, and professional services, often using WordPress or other CMSs as content backends.',
+    'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. I build and upgrade performance and SEO-critical sites for agencies, PR/reputation firms, and professional services, often using WordPress or other CMSs as content backends.',
   url: 'https://cmeklund.com',
   ogImage: 'https://cmeklund.com/christopher-eklund-fse-og.webp',
 
@@ -36,7 +36,7 @@ export const jsonLd = {
     url: SITE_URL,
     name: 'Christopher Eklund - Full-Stack Web Developer & Consultant',
     description:
-      'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for performance- and SEO-critical sites.',
+      'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for performance and SEO-critical sites.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,

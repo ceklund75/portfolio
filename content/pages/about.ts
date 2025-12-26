@@ -4,7 +4,7 @@ export const aboutContent = {
   pageHeader: {
     title: siteContent.name,
     description:
-      'Full-stack web developer & consultant building React, Next.js, and WordPress-powered sites for performance- and SEO-critical, content-heavy platforms.',
+      'Full-stack web developer & consultant building React, Next.js, and WordPress-powered sites for performance and SEO-critical, content-heavy platforms.',
   },
   images: {
     mobile: {
