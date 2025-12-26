@@ -5,8 +5,9 @@ export const siteContent = {
   //personal info
   name: 'Christopher Eklund',
   shortName: 'Chris Eklund',
-  title: 'Christopher Eklund | Full-Stack Engineer',
-  description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
+  title: 'Christopher Eklund - Full-Stack Web Developer & Consultant',
+  description:
+    'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. I build and upgrade performance- and SEO-critical sites for agencies, PR/reputation firms, and professional services, often using WordPress or other CMSs as content backends.',
   url: 'https://cmeklund.com',
   ogImage: 'https://cmeklund.com/christopher-eklund-fse-og.webp',
 
@@ -33,8 +34,9 @@ export const jsonLd = {
     '@type': 'WebPage',
     '@id': `${SITE_URL}/#webpage`,
     url: SITE_URL,
-    name: 'Christopher Eklund – Full-Stack Engineer',
-    description: 'Full-stack engineer focused on fast, SEO-critical web platforms.',
+    name: 'Christopher Eklund - Full-Stack Web Developer & Consultant',
+    description:
+      'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for performance- and SEO-critical sites.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
@@ -45,7 +47,7 @@ export const jsonLd = {
       '@type': 'Person',
       '@id': `${SITE_URL}/#person`,
       name: 'Christopher Eklund',
-      jobTitle: 'Senior Full-Stack Engineer',
+      jobTitle: 'Full-Stack Web Developer & Consultant',
       url: SITE_URL,
       sameAs: ['https://linkedin.com/in/cmeklund', 'https://github.com/ceklund75'],
     },
@@ -58,9 +60,9 @@ export const jsonLd = {
     givenName: 'Christopher',
     familyName: 'Eklund',
     url: `${SITE_URL}/about`,
-    jobTitle: 'Senior Full-Stack Engineer',
+    jobTitle: 'Full-Stack Web Developer & Consultant',
     description:
-      'Full-stack engineer and technology lead building content-heavy, SEO-critical web platforms.',
+      'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for content-heavy, SEO-critical web platforms.',
     worksFor: {
       '@type': 'Organization',
       name: 'Independent / Freelance',
@@ -83,7 +85,7 @@ export const jsonLd = {
     url: `${SITE_URL}/work`,
     name: 'Work – Christopher Eklund',
     description:
-      'Selected engineering projects by Christopher Eklund, including headless marketing sites, performance refactors, and custom tools.',
+      'Selected web development projects by Christopher Eklund, including React and Next.js builds, WordPress modernization, headless marketing sites, performance refactors, and custom tools.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
@@ -97,7 +99,7 @@ export const jsonLd = {
     url: `${SITE_URL}/contact`,
     name: 'Contact – Christopher Eklund',
     description:
-      'Contact Christopher Eklund about full-stack engineering roles, freelance projects, or collaborations.',
+      'Contact Christopher Eklund about web development consulting, WordPress modernization, React/Next.js projects, or ongoing performance and SEO-focused support.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,

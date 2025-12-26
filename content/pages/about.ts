@@ -4,7 +4,7 @@ export const aboutContent = {
   pageHeader: {
     title: siteContent.name,
     description:
-      'Full-stack engineer building content-heavy platforms for crisis communications and reputation management.',
+      'Full-stack web developer & consultant building React, Next.js, and WordPress-powered sites for performance- and SEO-critical, content-heavy platforms.',
   },
   images: {
     mobile: {
@@ -25,37 +25,36 @@ export const aboutContent = {
     },
   },
   paragraphs: [
-    `I'm Chris Eklund, a full-stack engineer and technology lead who builds content-heavy
-    web platforms for work that can't afford to break: corporate communications, advocacy
-    campaigns, litigation matters, and crisis response. Over the last 15+ years, I've
-    designed and maintained sites and tools that need to be fast, stable, and reliable
-    even when timelines are tight and the subject matter is sensitive.`,
+    `I'm Chris Eklund, a full-stack web developer & consultant who builds and modernizes content-heavy
+web platforms for work that can't afford to break. Over the last 15+ years, I've designed and maintained
+sites that need to be fast, stable, and reliable for corporate communications, advocacy campaigns,
+reputation-sensitive matters, and high-stakes client work.`,
     `Most of my work sits where modern web development meets search and reputation. I use
-    React, Next.js, Node.js, WordPress, and Python to ship sites, automations, and
-    dashboards, then tie them into SEO, analytics, and social listening so teams can see
-    how their message is actually landing.`,
+React, Next.js, TypeScript, Node.js, and WordPress to ship sites, automations, and
+dashboards, then tie them into technical SEO, analytics, and reporting so teams can see
+how their message is actually landing.`,
     `I'm used to picking up projects when the brief is fuzzy and the stakes are high.
-    Executives, lawyers, and communications teams hand me complex requirements, and my job
-    is to turn that into a practical technical plan: standing up a new campaign site,
-    wiring up monitoring and reporting, or hardening an existing system so it behaves
-    predictably under load.`,
+Executives, lawyers, and communications teams hand me complex requirements, and my job
+is to turn that into a practical technical plan: standing up a new marketing or campaign site,
+modernizing an existing WordPress install, wiring up monitoring and reporting, or hardening a system
+so it behaves predictably under load.`,
     `Earlier in my career, I built operations and data tools for telecom companies and led
-    software development and SEO at PR and crisis firms. That mix of infrastructure,
-    product, and search experience shapes how I think about performance, reliability, and
-    what shows up when someone types a name into a search bar.`,
+software development and SEO at PR and reputation firms. That mix of infrastructure,
+product, and search experience shapes how I think about performance, reliability, and
+what shows up when someone types a name into a search bar..`,
   ],
   focusAreas: [
-    `Full-stack web engineering with Next.js, TypeScript, and Node.js`,
-    `Headless WordPress and content-driven architectures`,
-    `Performance tuning and Core Web Vitals`,
-    `SEO, search landscape, and lead capture flows`,
+    `Full-stack web development with React, Next.js, TypeScript, and Node.js`,
+    `WordPress modernization and headless WordPress/content-driven architectures`,
+    `Performance tuning and Core Web Vitals for content-heavy sites`,
+    `Technical SEO, search landscape, and lead capture flows`,
   ],
 } as const
 
 export const aboutMetaData = {
   title: 'About',
   description:
-    'Background, experience, and focus areas for Christopher Eklund, a full-stack engineer working on SEO-critical web platforms.',
+    'Background, experience, and focus areas for Christopher Eklund, a full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for SEO-critical web platforms.',
   pathname: '/about',
   image: siteContent.ogImage,
 } as const

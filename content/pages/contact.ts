@@ -3,12 +3,11 @@ import { siteContent } from '../site'
 export const contactContent = {
   pageHeader: {
     title: siteContent.title,
-    description: 'Open to individual contributor roles and select freelance projects.',
+    description:
+      'Open to web development consulting, WordPress modernization, React/Next.js projects, and ongoing performance and SEO-focused support.',
   },
   paragraphs: [
-    `The easiest way to reach me is by email. If you'd like to talk about a role, a project,
-            or how I can help with performance, SEO, or technical architecture for high-stakes web
-            platforms, feel free to get in touch.`,
+    `The easiest way to reach me is by email. If you'd like to talk about a project or how I can help with WordPress modernization, React/Next.js builds, performance, SEO, or technical architecture for content-heavy sites, feel free to get in touch.`,
   ],
   links: [
     {
@@ -38,6 +37,6 @@ export const contactContent = {
 export const contactMetaData = {
   title: 'Contact',
   description:
-    'Contact Christopher Eklund about full-stack engineering roles, freelance projects, or collaborations on SEO-critical web platforms.',
+    'Contact Christopher Eklund about web development consulting, WordPress modernization, React/Next.js projects, or collaborations on performance and SEO-critical web platforms.',
   pathname: '/contact',
 } as const
