@@ -2,7 +2,7 @@ import { siteContent } from '../site'
 
 export const contactContent = {
   pageHeader: {
-    title: siteContent.title,
+    title: 'Contact',
     description:
       'Open to web development consulting, WordPress modernization, React/Next.js projects, and ongoing performance and SEO-focused support.',
   },
