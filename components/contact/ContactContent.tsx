@@ -5,6 +5,7 @@ import { MotionSection, MotionDiv } from '@/components/motion'
 import { fadeIn } from '@/lib/animations'
 import { jsonLd } from '@/content/site'
 import { ReactElement } from 'react'
+import { contactContent } from '@/content/pages/contact'
 
 export function ContactContent(): ReactElement {
   return (
@@ -14,52 +15,46 @@ export function ContactContent(): ReactElement {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.contactJsonLd) }}
       />
       <PageHeader
-        title="Contact"
-        description="Open to individual contributor roles and select freelance projects."
+        title={contactContent.pageHeader.title}
+        description={contactContent.pageHeader.description}
       />
       <MotionSection
         variants={fadeIn}
         className={`${[styles.section, styles.text.body].join(' ')}`}
       >
-        <MotionDiv variants={fadeIn}>
-          <p>
-            The easiest way to reach me is by email. If you'd like to talk about a role, a project,
-            or how I can help with performance, SEO, or technical architecture for high-stakes web
-            platforms, feel free to get in touch.
-          </p>
-        </MotionDiv>
-        <MotionDiv variants={fadeIn} className={`${[styles.section, styles.card.ghost].join(' ')}`}>
-          <ul className="grid space-y-4 sm:grid-cols-3">
-            <li className="space-y-1">
-              <p className="font-medium">Email</p>
-              <a href="mailto:chris@cmeklund.com" className="underline underline-offset-4">
-                chris@cmeklund.com
-              </a>
-            </li>
-            <li className="space-y-1">
-              <p className="font-medium">LinkedIn</p>
-              <a
-                href="https://www.linkedin.com/in/cmeklund"
-                className="underline underline-offset-4"
-                target="_blank"
-                rel="noreferrer"
-              >
-                linkedin.com/in/cmeklund
-              </a>
-            </li>
-            <li className="space-y-1">
-              <p className="font-medium">Github</p>
-              <a
-                href="https://github.com/ceklund75"
-                className="underline underline-offset-4"
-                target="_blank"
-                rel="noreferrer"
-              >
-                github.com/ceklund75
-              </a>
-            </li>
-          </ul>
-        </MotionDiv>
+        {contactContent.paragraphs &&
+          contactContent.paragraphs.map((paragraph, idx) => {
+            return (
+              <MotionDiv key={idx} variants={fadeIn}>
+                <p>{paragraph}</p>
+              </MotionDiv>
+            )
+          })}
+
+        {contactContent.links && (
+          <MotionDiv
+            variants={fadeIn}
+            className={`${[styles.section, styles.card.ghost].join(' ')}`}
+          >
+            <ul className="grid space-y-4 sm:grid-cols-3">
+              {contactContent.links.map((link, idx) => {
+                return (
+                  <li key={idx} className="space-y-1">
+                    <p className="font-medium">{link.label}</p>
+                    <a
+                      href={link.url}
+                      className="underline underline-offset-4"
+                      target={link.target}
+                      rel={link.rel}
+                    >
+                      {link.linkName}
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+          </MotionDiv>
+        )}
       </MotionSection>
     </div>
   )

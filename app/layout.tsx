@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 
 import { Geist, Geist_Mono, TASA_Orbiter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 import { ThemeProvider } from '@/context/ThemeContext'
@@ -70,6 +71,7 @@ export default function RootLayout({
           </ThemeProvider>
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
