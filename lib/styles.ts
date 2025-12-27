@@ -47,6 +47,9 @@ export const styles = {
 
     // Small text (captions, meta info)
     small: 'text-sm text-slate-600 dark:text-slate-400',
+
+    // Emphasis text
+    strong: 'font-bold text-base text-slate-800 dark:text-slate-50 leading-relaxed',
   },
 
   // Eyebrow labels (category, section labels)

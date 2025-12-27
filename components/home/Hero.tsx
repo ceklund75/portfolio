@@ -25,17 +25,20 @@ export function Hero(): ReactElement {
         <MotionDiv variants={fadeInUp}>
           <p className={`${styles.text.lead} max-w-4xl`}>{hero.description}</p>
         </MotionDiv>
+
         <MotionDiv variants={fadeInUp}>
           <h2 className={styles.heading.h2}>{homeContent.hero.services.title}</h2>
         </MotionDiv>
-        <MotionDiv variants={fadeInUp}>
-          <ul className={`${styles.text.body} grid gap-8 md:grid-cols-2`}>
-            {homeContent.hero.services.items &&
-              homeContent.hero.services.items.map((item, idx) => {
-                return <li key={idx}>{item}</li>
-              })}
-          </ul>
-        </MotionDiv>
+        <ul className={`${styles.text.body} grid max-w-4xl gap-8`}>
+          {homeContent.hero.services.items &&
+            homeContent.hero.services.items.map((item, idx) => {
+              return (
+                <MotionDiv key={idx} variants={fadeInUp}>
+                  <li className={`${styles.text.strong}`}>{item}</li>
+                </MotionDiv>
+              )
+            })}
+        </ul>
         <MotionDiv variants={fadeInUp} className="flex gap-3 text-sm">
           <Link href={hero.cta.primary.href} className={styles.button.primary}>
             {hero.cta.primary.label}
