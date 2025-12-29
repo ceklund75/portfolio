@@ -47,20 +47,14 @@ Full-stack engineer focused on fast, SEO-critical web platforms. This is a perso
 
 npm install
 
-text
-
 If you encounter integrity or cache issues, clear the npm cache and retry:
 
 npm cache clean --force
 npm install
 
-text
-
 ### Development
 
 npm run dev
-
-text
 
 Then open:
 
@@ -69,9 +63,8 @@ Then open:
 ### Production build
 
 npm run build
-npm start
 
-text
+npm start
 
 ## Project structure
 
