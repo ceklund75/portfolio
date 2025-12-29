@@ -1,12 +1,12 @@
 # Christopher Eklund – Portfolio
 
-Full-stack engineer focused on fast, SEO-critical web platforms. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
+Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
 
 > Note: Content sections (case studies, detailed writeups, MDX pages) are currently work in progress and will be expanded over time.[web:134][web:148]
 
 ## Tech stack
 
-- **Framework:** Next.js 15 with App Router (`app/` directory)[web:72][web:109]
+- **Framework:** Next.js 16 with App Router (`app/` directory)[web:72][web:109]
 - **Language:** TypeScript with strict typing for props and data models[web:159]
 - **Styling:** Tailwind CSS v4 with CSS-first config using `@import`, `@theme`, and `@layer` in global styles[web:116]
 - **Animation:** Motion (`motion/react`) for hero, project cards, and mobile navigation animations[web:125]
