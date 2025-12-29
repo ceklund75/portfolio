@@ -9,7 +9,7 @@ export const siteContent = {
   description:
     'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. I build and upgrade performance and SEO-critical sites for agencies, PR/reputation firms, and professional services, often using WordPress or other CMSs as content backends.',
   url: 'https://cmeklund.com',
-  ogImage: 'https://cmeklund.com/christopher-eklund-fse-og.webp',
+  ogImage: 'https://cmeklund.com/christopher-eklund-og.webp',
 
   //nav items
   nav: [
