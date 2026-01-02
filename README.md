@@ -1,18 +1,18 @@
 # Christopher Eklund – Portfolio
 
-Full-stack engineer focused on fast, SEO-critical web platforms. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.[web:72][web:116][web:125]
+Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.
 
-> Note: Content sections (case studies, detailed writeups, MDX pages) are currently work in progress and will be expanded over time.[web:134][web:148]
+> Note: Content sections (case studies, detailed writeups, MDX pages) are currently work in progress and will be expanded over time.
 
 ## Tech stack
 
-- **Framework:** Next.js 15 with App Router (`app/` directory)[web:72][web:109]
-- **Language:** TypeScript with strict typing for props and data models[web:159]
-- **Styling:** Tailwind CSS v4 with CSS-first config using `@import`, `@theme`, and `@layer` in global styles[web:116]
-- **Animation:** Motion (`motion/react`) for hero, project cards, and mobile navigation animations[web:125]
-- **Fonts:** `Geist`, `Geist Mono`, and `TASA Orbiter` via `next/font` for consistent typography[web:72]
-- **Linting/Formatting:** ESLint (flat config) with `eslint-config-next` and `eslint-plugin-prettier`, plus Prettier and `prettier-plugin-tailwindcss` for class sorting[web:159]
-- **Icons:** `lucide-react` for lightweight, consistent iconography in navigation and theme controls[web:152]
+- **Framework:** Next.js 16 with App Router (`app/` directory)
+- **Language:** TypeScript with strict typing for props and data models
+- **Styling:** Tailwind CSS v4 with CSS-first config using `@import`, `@theme`, and `@layer` in global styles
+- **Animation:** Motion (`motion/react`) for hero, project cards, and mobile navigation animations
+- **Fonts:** `Geist`, `Geist Mono`, and `TASA Orbiter` via `next/font` for consistent typography
+- **Linting/Formatting:** ESLint (flat config) with `eslint-config-next` and `eslint-plugin-prettier`, plus Prettier and `prettier-plugin-tailwindcss` for class sorting
+- **Icons:** `lucide-react` for lightweight, consistent iconography in navigation and theme controls
 
 ## Features
 
@@ -23,7 +23,7 @@ Full-stack engineer focused on fast, SEO-critical web platforms. This is a perso
 
 - **Responsive layout & navigation**
   - Sticky header with desktop navigation and a mobile hamburger menu
-  - Animated mobile menu using Motion variants for subtle slide and fade transitions[web:125]
+  - Animated mobile menu using Motion variants for subtle slide and fade transitions
   - Layout containers tuned for readable line lengths on large and small screens
 
 - **Portfolio content model**
@@ -40,27 +40,21 @@ Full-stack engineer focused on fast, SEO-critical web platforms. This is a perso
 
 ### Prerequisites
 
-- Node.js 18 or newer[web:72]
-- npm, pnpm, or yarn as a package manager[web:159]
+- Node.js 18 or newer
+- npm, pnpm, or yarn as a package manager
 
 ### Install dependencies
 
 npm install
-
-text
 
 If you encounter integrity or cache issues, clear the npm cache and retry:
 
 npm cache clean --force
 npm install
 
-text
-
 ### Development
 
 npm run dev
-
-text
 
 Then open:
 
@@ -69,9 +63,8 @@ Then open:
 ### Production build
 
 npm run build
-npm start
 
-text
+npm start
 
 ## Project structure
 
@@ -102,6 +95,4 @@ work.ts # Work page intro, labels, etc.
 data/
 projects.ts # Typed Project[] data
 
-text
-
-This structure keeps routing, layout, theming, and content clearly separated, which aligns with common recommendations for Next.js portfolio and documentation projects.[web:136][web:139][web:150]
+This structure keeps routing, layout, theming, and content clearly separated, which aligns with common recommendations for Next.js portfolio and documentation projects.
