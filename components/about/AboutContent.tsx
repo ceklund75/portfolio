@@ -76,7 +76,7 @@ export function AboutContent(): ReactElement {
         </MotionDiv>
         <MotionDiv variants={fadeIn}>
           <ul className={`${styles.text.small} grid gap-8 md:grid-cols-2`}>
-            <li>Full-stack web engineering with Next.js, TypeScript, and Node.js</li>
+            <li>Full-stack web development with Next.js, TypeScript, and Node.js</li>
             <li>Headless WordPress and content-driven architectures</li>
             <li>Performance tuning and Core Web Vitals</li>
             <li>SEO, search landscape, and lead capture flows</li>

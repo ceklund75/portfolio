@@ -7,8 +7,8 @@ import { jsonLd } from '@/content/site'
 import { createPageMetadata } from '@/lib/metadata'
 
 export const metadata = createPageMetadata(
-  'Christopher Eklund - Full-Stack Engineer',
-  'Full-stack engineer focused on fast, SEO-critical web platforms.',
+  'Christopher Eklund - Full-Stack Web Developer',
+  'Full-stack web developer focused on fast, SEO-critical web platforms.',
   '/',
 )
 
