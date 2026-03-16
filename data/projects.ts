@@ -90,7 +90,7 @@ export const projects: Project[] = [
       'Optimized Core Web Vitals: 99 Lighthouse Performance score, <2.5s LCP, 0 CLS',
       'Enforced strict TypeScript across all components with zero any types and fully typed props/API responses.',
     ],
-    tech: ['Next.js 16', 'TypeScript', 'React', 'Tailwind CSS v4', 'Motion'],
+    tech: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Motion'],
     featured: false,
     priority: 3,
     links: {
