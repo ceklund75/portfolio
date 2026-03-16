@@ -27,6 +27,32 @@ export type WorkRouteInfo = {
 
 export const projects: Project[] = [
   {
+    id: 'dr-howard-murad-site',
+    slug: 'dr-howard-murad-site',
+    title: 'Dr. Howard Murad Headless Personal Blog Site Migration',
+    role: 'Solo full-stack developer',
+    summary:
+      'End‑to‑end migration of the Dr. Howard Murad site from a legacy WordPress/Uncode theme to a modern headless Next.js + TypeScript + GraphQL stack, with improved authoring workflows, performance, and SEO.',
+    highlights: [
+      'Owned the migration end to end: architecture, implementation, content modeling, deployment, and ongoing iteration.',
+      'Rebuilt the public site and blog as a headless Next.js App Router application backed by a WordPress + GraphQL API.',
+      'Implemented reusable layout and page-building components (hero, sections, modals, CTAs) mapped to structured WordPress content.',
+      'Built rich blog experiences with video modals, sharing, and preview tooling to support editorial workflows.',
+      'Implemented SEO helpers for metadata and JSON‑LD, improving search visibility and consistency across pages and posts.',
+      'Introduced a custom font stack and responsive design system using Tailwind CSS to match brand guidelines while improving maintainability.',
+    ],
+    tech: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'GraphQL', 'WordPress'],
+    featured: true,
+    priority: 1,
+    links: {
+      live: 'https://drhowardmurad.com',
+      repo: 'https://github.com/ceklund75/drhowardmurad',
+    },
+    updatedAt: '2026-03-16T00:00:00.000Z',
+    hideFromSitemap: false,
+  },
+
+  {
     id: 'faust-nextjs-site',
     slug: 'faust-nextjs-site',
     title: 'Headless Marketing Site with Next.js & Faust',
@@ -40,10 +66,10 @@ export const projects: Project[] = [
       'Implemented SEO-aware URL structures, metadata, and content organization',
     ],
     tech: ['Next.js', 'Faust.js', 'WordPress', 'Node.js', 'WP Engine Atlas'],
-    featured: true,
-    priority: 1,
+    featured: false,
+    priority: 2,
     links: {
-      live: 'https://digitalstrategyltd.com', // placeholder for now
+      live: 'https://digitalstrategyltd.com',
     },
     updatedAt: '2025-12-11T00:00:00.000Z',
     hideFromSitemap: false,
@@ -66,7 +92,7 @@ export const projects: Project[] = [
     ],
     tech: ['Next.js 16', 'TypeScript', 'React', 'Tailwind CSS v4', 'Motion'],
     featured: false,
-    priority: 2,
+    priority: 3,
     links: {
       live: 'https://cmeklund.com',
       repo: 'https://github.com/ceklund75/portfolio',
@@ -74,6 +100,7 @@ export const projects: Project[] = [
     updatedAt: '2025-12-23T00:00:00.000Z',
     hideFromSitemap: false,
   },
+
   {
     id: 'quantum-encryption-marketing-site',
     slug: 'quantum-encryption-marketing-site',
@@ -89,13 +116,14 @@ export const projects: Project[] = [
     ],
     tech: ['WordPress', 'Laravel Blade', 'Tailwind CSS', 'Marketo', 'Salesforce'],
     featured: false,
-    priority: 3,
+    priority: 4,
     links: {
       live: 'https://qrypt.com',
     },
     updatedAt: '2025-12-11T00:00:00.000Z',
     hideFromSitemap: true,
   },
+
   {
     id: 'dues-calculator-plugin',
     slug: 'dues-calculator-plugin',
@@ -111,13 +139,14 @@ export const projects: Project[] = [
     ],
     tech: ['WordPress', 'PHP', 'JavaScript', 'Shortcodes'],
     featured: false,
-    priority: 4,
+    priority: 5,
     links: {
       repo: 'https://github.com/ceklund75/dues-calculator-plugin',
     },
     updatedAt: '2025-12-11T00:00:00.000Z',
     hideFromSitemap: true,
   },
+
   {
     id: 'client-list-plugin',
     slug: 'client-list-plugin',
@@ -133,7 +162,7 @@ export const projects: Project[] = [
     ],
     tech: ['WordPress', 'PHP', 'JavaScript', 'Shortcodes'],
     featured: false,
-    priority: 4,
+    priority: 6,
     links: {
       repo: 'https://github.com/ceklund75/client-list-shortcode',
     },
@@ -141,13 +170,3 @@ export const projects: Project[] = [
     hideFromSitemap: true,
   },
 ]
-
-export function getWorkProjectPaths(): WorkRouteInfo[] {
-  const visibleProjects = projects.filter((project) => !project.hideFromSitemap)
-  return visibleProjects.map((project) => {
-    return {
-      path: `/work/${project.slug}`,
-      lastModified: project.updatedAt || siteConfig.PORTFOLIO_LAST_UPDATED,
-    }
-  })
-}
