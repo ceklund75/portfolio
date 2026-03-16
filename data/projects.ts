@@ -170,3 +170,13 @@ export const projects: Project[] = [
     hideFromSitemap: true,
   },
 ]
+
+export function getWorkProjectPaths(): WorkRouteInfo[] {
+  const visibleProjects = projects.filter((project) => !project.hideFromSitemap)
+  return visibleProjects.map((project) => {
+    return {
+      path: `/work/${project.slug}`,
+      lastModified: project.updatedAt || siteConfig.PORTFOLIO_LAST_UPDATED,
+    }
+  })
+}
