@@ -29,7 +29,7 @@ export const projects: Project[] = [
   {
     id: 'dr-howard-murad-site',
     slug: 'dr-howard-murad-site',
-    title: 'Dr. Howard Murad Headless Personal Blog Site Migration',
+    title: 'Dr. Howard Murad Headless Site Migration',
     role: 'Solo full-stack developer',
     summary:
       'End‑to‑end migration of the Dr. Howard Murad site from a legacy WordPress/Uncode theme to a modern headless Next.js + TypeScript + GraphQL stack, with improved authoring workflows, performance, and SEO.',
