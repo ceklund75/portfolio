@@ -124,51 +124,51 @@ export const projects: Project[] = [
     hideFromSitemap: true,
   },
 
-  {
-    id: 'dues-calculator-plugin',
-    slug: 'dues-calculator-plugin',
-    title: 'Union Dues Calculator WordPress Plugin',
-    role: 'Solo plugin developer',
-    summary:
-      'Custom WordPress plugin that calculates union dues based on configurable rules and renders an embeddable calculator via shortcode for use on campaign and informational sites.',
-    highlights: [
-      'Designed a reusable plugin instead of hard-coding calculator logic into individual themes or pages',
-      'Implemented a shortcode-based calculator UI so non-technical editors can embed it anywhere in WordPress content',
-      'Encapsulated the dues calculation logic in PHP functions to keep business rules testable and easy to adjust',
-      'Handled user input and output formatting to present clear, predictable results for site visitors',
-    ],
-    tech: ['WordPress', 'PHP', 'JavaScript', 'Shortcodes'],
-    featured: false,
-    priority: 5,
-    links: {
-      repo: 'https://github.com/ceklund75/dues-calculator-plugin',
-    },
-    updatedAt: '2025-12-11T00:00:00.000Z',
-    hideFromSitemap: true,
-  },
+  // {
+  //   id: 'dues-calculator-plugin',
+  //   slug: 'dues-calculator-plugin',
+  //   title: 'Union Dues Calculator WordPress Plugin',
+  //   role: 'Solo plugin developer',
+  //   summary:
+  //     'Custom WordPress plugin that calculates union dues based on configurable rules and renders an embeddable calculator via shortcode for use on campaign and informational sites.',
+  //   highlights: [
+  //     'Designed a reusable plugin instead of hard-coding calculator logic into individual themes or pages',
+  //     'Implemented a shortcode-based calculator UI so non-technical editors can embed it anywhere in WordPress content',
+  //     'Encapsulated the dues calculation logic in PHP functions to keep business rules testable and easy to adjust',
+  //     'Handled user input and output formatting to present clear, predictable results for site visitors',
+  //   ],
+  //   tech: ['WordPress', 'PHP', 'JavaScript', 'Shortcodes'],
+  //   featured: false,
+  //   priority: 5,
+  //   links: {
+  //     repo: 'https://github.com/ceklund75/dues-calculator-plugin',
+  //   },
+  //   updatedAt: '2025-12-11T00:00:00.000Z',
+  //   hideFromSitemap: true,
+  // },
 
-  {
-    id: 'client-list-plugin',
-    slug: 'client-list-plugin',
-    title: 'Client List Shortcode Plugin for WordPress',
-    role: 'Solo plugin developer',
-    summary:
-      'Lightweight WordPress plugin that lets editors manage a text-based client roster in the Media Library and render it via a [client_list] shortcode, with optional A-Z tabbed navigation and accessible three-column layout.',
-    highlights: [
-      'Built a configurable shortcode that reads from an uploaded text file, so non-technical users can update client names without touching templates or code.',
-      'Implemented an admin settings screen using the WordPress Settings API and Media Library integration to safely select and store the client list file URL.',
-      'Rendered clients in an accessible, responsive three-column grid with optional A-Z tabs, including logic to group names by initial and handle numeric/edge cases.',
-      'Added filters, sanitization, and pluggable helpers (cls_client_list_clients, cls_client_list_filtered_clients) so other developers can extend the output and integrate the plugin into larger themes.',
-    ],
-    tech: ['WordPress', 'PHP', 'JavaScript', 'Shortcodes'],
-    featured: false,
-    priority: 6,
-    links: {
-      repo: 'https://github.com/ceklund75/client-list-shortcode',
-    },
-    updatedAt: '2025-12-29T00:00:00.000Z',
-    hideFromSitemap: true,
-  },
+  // {
+  //   id: 'client-list-plugin',
+  //   slug: 'client-list-plugin',
+  //   title: 'Client List Shortcode Plugin for WordPress',
+  //   role: 'Solo plugin developer',
+  //   summary:
+  //     'Lightweight WordPress plugin that lets editors manage a text-based client roster in the Media Library and render it via a [client_list] shortcode, with optional A-Z tabbed navigation and accessible three-column layout.',
+  //   highlights: [
+  //     'Built a configurable shortcode that reads from an uploaded text file, so non-technical users can update client names without touching templates or code.',
+  //     'Implemented an admin settings screen using the WordPress Settings API and Media Library integration to safely select and store the client list file URL.',
+  //     'Rendered clients in an accessible, responsive three-column grid with optional A-Z tabs, including logic to group names by initial and handle numeric/edge cases.',
+  //     'Added filters, sanitization, and pluggable helpers (cls_client_list_clients, cls_client_list_filtered_clients) so other developers can extend the output and integrate the plugin into larger themes.',
+  //   ],
+  //   tech: ['WordPress', 'PHP', 'JavaScript', 'Shortcodes'],
+  //   featured: false,
+  //   priority: 6,
+  //   links: {
+  //     repo: 'https://github.com/ceklund75/client-list-shortcode',
+  //   },
+  //   updatedAt: '2025-12-29T00:00:00.000Z',
+  //   hideFromSitemap: true,
+  // },
 ]
 
 export function getWorkProjectPaths(): WorkRouteInfo[] {
