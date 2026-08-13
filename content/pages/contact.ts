@@ -37,6 +37,6 @@ export const contactContent = {
 export const contactMetaData = {
   title: 'Contact',
   description:
-    'Contact Christopher Eklund about web development consulting, WordPress modernization, React/Next.js projects, or collaborations on performance and SEO-critical web platforms.',
+    'Contact Chris Eklund about web development consulting, WordPress modernization, React/Next.js projects, or collaborations on performance and SEO-critical web platforms.',
   pathname: '/contact',
 } as const

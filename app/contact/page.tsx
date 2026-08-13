@@ -5,7 +5,7 @@ import { createPageMetadata } from '@/lib/metadata'
 
 export const metadata: Metadata = createPageMetadata(
   'Contact',
-  'Contact Christopher Eklund about full-stack engineering roles, freelance projects, or collaborations on SEO-critical web platforms.',
+  'Contact Chris Eklund about full-stack engineering roles, freelance projects, or collaborations on SEO-critical web platforms.',
   '/contact',
 )
 

@@ -8,20 +8,22 @@ export const aboutContent = {
   },
   images: {
     mobile: {
-      source: '/Christopher-Eklund-mobile.webp',
+      source: '/Chris-Eklund-mobile.webp',
       alt: siteContent.name,
       width: 480,
       height: 480,
       sizes: '(max-width: 767px) 100vw, 0px',
       className: 'h-auto w-full max-w-md rounded-lg object-cover',
+      loading: 'eager'
     },
     desktop: {
-      source: '/Christopher-Eklund.webp',
+      source: '/Chris-Eklund.webp',
       alt: siteContent.name,
       width: 300,
       height: 650,
       sizes: '(max-width: 767px) 100vw, 300px',
       className: 'h-auto w-full max-w-65 rounded-lg object-cover',
+      loading: 'eager'
     },
   },
   paragraphs: [
@@ -41,7 +43,7 @@ so it behaves predictably under load.`,
     `Earlier in my career, I built operations and data tools for telecom companies and led
 software development and SEO at PR and reputation firms. That mix of infrastructure,
 product, and search experience shapes how I think about performance, reliability, and
-what shows up when someone types a name into a search bar..`,
+what shows up when someone types a name into a search bar.`,
   ],
   focusAreas: [
     `Full-stack web development with React, Next.js, TypeScript, and Node.js`,
@@ -54,7 +56,7 @@ what shows up when someone types a name into a search bar..`,
 export const aboutMetaData = {
   title: 'About',
   description:
-    'Background, experience, and focus areas for Christopher Eklund, a full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for SEO-critical web platforms.',
+    'Background, experience, and focus areas for Chris Eklund, a full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for SEO-critical web platforms.',
   pathname: '/about',
   image: siteContent.ogImage,
 } as const

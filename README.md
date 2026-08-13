@@ -1,4 +1,4 @@
-# Christopher Eklund – Portfolio
+# Chris Eklund – Portfolio
 
 Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. This is a personal portfolio site built with the Next.js App Router, TypeScript, Tailwind CSS v4, and Motion for animations.
 

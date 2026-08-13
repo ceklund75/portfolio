@@ -11,6 +11,6 @@ export const workContent = {
 export const workMetaData = {
   title: 'Work',
   description:
-    'Selected projects from Christopher Eklund, including React and Next.js sites, WordPress modernization, headless marketing builds, performance-focused refactors, and custom tools for SEO-critical, content-heavy businesses.',
+    'Selected projects from Chris Eklund, including React and Next.js sites, WordPress modernization, headless marketing builds, performance-focused refactors, and custom tools for SEO-critical, content-heavy businesses.',
   pathname: '/work',
 } as const

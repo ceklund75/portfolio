@@ -29,6 +29,7 @@ export function AboutContent(): ReactElement {
             height={aboutContent.images.mobile.width}
             sizes={aboutContent.images.mobile.sizes}
             className={aboutContent.images.mobile.className}
+            loading={aboutContent.images.mobile.loading}
           />
         </MotionDiv>
         <MotionSection
@@ -45,6 +46,7 @@ export function AboutContent(): ReactElement {
               height={aboutContent.images.desktop.width}
               sizes={aboutContent.images.desktop.sizes}
               className={aboutContent.images.desktop.className}
+              loading={aboutContent.images.desktop.loading}
             />
           </MotionDiv>
         </MotionSection>

@@ -3,13 +3,13 @@ const SITE_URL = 'https://cmeklund.com'
 
 export const siteContent = {
   //personal info
-  name: 'Christopher Eklund',
+  name: 'Chris Eklund',
   shortName: 'Chris Eklund',
-  title: 'Christopher Eklund - Full-Stack Web Developer & Consultant',
+  title: 'Chris Eklund - Full-Stack Web Developer & Consultant',
   description:
     'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization. I build and upgrade performance and SEO-critical sites for agencies, PR/reputation firms, and professional services, often using WordPress or other CMSs as content backends.',
   url: 'https://cmeklund.com',
-  ogImage: 'https://cmeklund.com/christopher-eklund-og.webp',
+  ogImage: 'https://cmeklund.com/Chris-eklund-og.webp',
 
   //nav items
   nav: [
@@ -21,7 +21,7 @@ export const siteContent = {
   copyright: `© ${new Date().getFullYear()}`,
   //contact info
   contact: {
-    name: 'Christopher Eklund',
+    name: 'Chris Eklund',
     email: 'chris@cmeklund.com',
     linkedin: 'https://linkedin.com/in/cmeklund',
     github: 'https://github.com/ceklund75',
@@ -34,19 +34,19 @@ export const jsonLd = {
     '@type': 'WebPage',
     '@id': `${SITE_URL}/#webpage`,
     url: SITE_URL,
-    name: 'Christopher Eklund - Full-Stack Web Developer & Consultant',
+    name: 'Chris Eklund - Full-Stack Web Developer & Consultant',
     description:
       'Full-stack web developer & consultant specializing in React, Next.js, and WordPress modernization for performance and SEO-critical sites.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: 'Christopher Eklund Portfolio',
+      name: 'Chris Eklund Portfolio',
     },
     mainEntity: {
       '@type': 'Person',
       '@id': `${SITE_URL}/#person`,
-      name: 'Christopher Eklund',
+      name: 'Chris Eklund',
       jobTitle: 'Full-Stack Web Developer & Consultant',
       url: SITE_URL,
       sameAs: ['https://linkedin.com/in/cmeklund', 'https://github.com/ceklund75'],
@@ -56,8 +56,8 @@ export const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     '@id': `${SITE_URL}/#person`,
-    name: 'Christopher Eklund',
-    givenName: 'Christopher',
+    name: 'Chris Eklund',
+    givenName: 'Chris',
     familyName: 'Eklund',
     url: `${SITE_URL}/about`,
     jobTitle: 'Full-Stack Web Developer & Consultant',
@@ -83,9 +83,9 @@ export const jsonLd = {
     '@type': ['WebPage', 'CollectionPage'],
     '@id': `${SITE_URL}/work#webpage`,
     url: `${SITE_URL}/work`,
-    name: 'Work – Christopher Eklund',
+    name: 'Work – Chris Eklund',
     description:
-      'Selected web development projects by Christopher Eklund, including React and Next.js builds, WordPress modernization, headless marketing sites, performance refactors, and custom tools.',
+      'Selected web development projects by Chris Eklund, including React and Next.js builds, WordPress modernization, headless marketing sites, performance refactors, and custom tools.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
@@ -97,9 +97,9 @@ export const jsonLd = {
     '@type': ['WebPage', 'ContactPage'],
     '@id': `${SITE_URL}/contact#webpage`,
     url: `${SITE_URL}/contact`,
-    name: 'Contact – Christopher Eklund',
+    name: 'Contact – Chris Eklund',
     description:
-      'Contact Christopher Eklund about web development consulting, WordPress modernization, React/Next.js projects, or ongoing performance and SEO-focused support.',
+      'Contact Chris Eklund about web development consulting, WordPress modernization, React/Next.js projects, or ongoing performance and SEO-focused support.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
